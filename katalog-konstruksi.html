@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Katalog Alat Elektronik | PT. SriRezeki IndoTama</title>
+    <meta
+      name="description"
+      content="Katalog pengadaan alat elektronik perkantoran berkualitas tinggi dari PT. SriRezeki IndoTama. Meliputi perangkat IT, ruang meeting, dan pendukung operasional kantor."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- File CSS Global/Landing Page dan CSS Khusus Katalog -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kontruksi.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar (Konsisten dengan Halaman Utama) -->
+    <header class="navbar-container">
+      <nav class="navbar">
+        <a
+          href="indotama.html"
+          class="brand-logo"
+          aria-label="PT. SriRezeki IndoTama Homepage"
+        >
+          PT. SriRezeki <span>IndoTama</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Buka Menu Navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="indotama.html#home">Beranda</a></li>
+          <li><a href="indotama.html#about">Tentang Kami</a></li>
+          <li><a href="indotama.html#services">Layanan</a></li>
+
+          <!-- Submenu Katalog -->
+          <li class="dropdown">
+            <a href="javascript:void(0)">
+              Katalog <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="katalog-konstruksi.html">
+                  <i class="fa-solid fa-bolt"></i> Alat Elektronik
+                </a>
+              </li>
+              <li>
+                <a href="katalog-kebakaran.html">
+                  <i class="fa-solid fa-fire-extinguisher"></i> Kelistrikan &
+                  Fire Safety
+                </a>
+              </li>
+              <li>
+                <a href="katalog-furniture.html">
+                  <i class="fa-solid fa-couch"></i> Furnitur & Interior
+                </a>
+              </li>
+              <li>
+                <a href="katalog-atk.html" class="active">
+                  <i class="fa-solid fa-pen-clip"></i> Alat Tulis Kantor (ATK)
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Contact Us Dropdown -->
+          <li class="dropdown">
+            <a href="#contact" class="btn btn-primary">
+              Contact Us <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-contact">
+              <li>
+                <a
+                  href="https://wa.me/628158999400"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-whatsapp whatsapp-icon"></i> WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/srirezeki.indotama?stkn=MWE2MHVlbHk4azU="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-instagram instagram-icon"></i>
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Catalog Banner Header -->
+      <section class="catalog-hero">
+        <div class="catalog-hero-content">
+          <span class="badge"
+            ><i class="fa-solid fa-bolt"></i> Katalog Alat Elektronik</span
+          >
+          <h1>Alat Elektronik & Perkantoran</h1>
+          <p>
+            Solusi komprehensif pengadaan perangkat elektronik dan teknologi
+            terbaik untuk mendukung kelancaran operasional perkantoran korporat
+            secara efisien dan handal.
+          </p>
+        </div>
+      </section>
+
+      <!-- Catalog Content Section -->
+      <section class="catalog-section">
+        <div class="catalog-container">
+          <!-- Filter & Search Bar -->
+          <div class="catalog-toolbar">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="catalog-search"
+                placeholder="Cari perangkat elektronik kantor..."
+              />
+            </div>
+            <div class="filter-categories">
+              <button class="filter-btn active" data-filter="all">Semua</button>
+              <button class="filter-btn" data-filter="it">IT & Komputer</button>
+              <button class="filter-btn" data-filter="presentasi">
+                Ruang Meeting
+              </button>
+              <button class="filter-btn" data-filter="pendukung">
+                Pendukung Kantor
+              </button>
+            </div>
+          </div>
+
+          <!-- Catalog Grid -->
+          <div class="catalog-grid">
+            <!-- Item 1: IT & Komputer -->
+            <article class="catalog-card" data-category="it">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+                  alt="PC Desktop dan Laptop Kantor"
+                  loading="lazy"
+                />
+                <span class="category-tag">IT & Komputer</span>
+              </div>
+              <div class="catalog-body">
+                <h3>PC Desktop, Laptop & Server</h3>
+                <p>
+                  Pengadaan perangkat komputer kerja, laptop standar korporat,
+                  serta server penyimpanan data internal perusahaan.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Spesifikasi Standar
+                    Korporat
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Garansi Resmi & Siap Pakai
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20pengadaan%20PC%20dan%20Laptop%20Kantor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2: Ruang Meeting -->
+            <article class="catalog-card" data-category="presentasi">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=600&q=80"
+                  alt="Proyektor dan Smart TV"
+                  loading="lazy"
+                />
+                <span class="category-tag">Ruang Meeting</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Smart TV, Proyektor & Video Conference</h3>
+                <p>
+                  Perlengkapan ruang rapat modern seperti layar interaktif/Smart
+                  TV, proyektor, serta kamera & speakerphone.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Resolusi Tinggi 4K / Full
+                    HD
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Kompatibel Zoom & Teams
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20perangkat%20Ruang%20Meeting"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 3: Pendukung Kantor -->
+            <article class="catalog-card" data-category="pendukung">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?auto=format&fit=crop&w=600&q=80"
+                  alt="Printer dan Mesin Absensi"
+                  loading="lazy"
+                />
+                <span class="category-tag">Pendukung Kantor</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Printer, Mesin Fotokopi & Absensi</h3>
+                <p>
+                  Penyediaan mesin cetak dokumen, mesin fotokopi komersial,
+                  serta mesin absensi sidik jari/face recognition.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Efisiensi Tinta & Kinerja
+                    Cepat
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Rekap Data Absensi
+                    Otomatis
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20pengadaan%20Printer%20dan%20Mesin%20Absensi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Konsisten) -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="brand-logo">PT. SriRezeki <span>IndoTama</span></div>
+          <p>
+            Mitra terpercaya untuk layanan pengadaan alat elektronik kantor dan
+            solusi korporat berkualitas tinggi.
+          </p>
+        </div>
+        <div class="footer-links">
+          <p><strong>Daftar Halaman</strong></p>
+          <a href="indotama.html">Beranda</a>
+          <a href="indotama.html">Tentang Kami</a>
+          <a href="indotama.html">Layanan</a>
+        </div>
+        <div class="footer-socials">
+          <p><strong>Contact Us</strong></p>
+          <a
+            href="https://wa.me/628158999400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a
+            href="https://www.instagram.com/srirezeki.indotama?stkn=MWE2MHVlbHk4azU="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PT. SriRezeki IndoTama. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Script Menu Navigation & Filter Search Katalog -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Menu Toggle Mobile
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            const icon = menuToggle.querySelector("i");
+            if (icon) {
+              if (navLinks.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+              } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+              }
+            }
+          });
+        }
+
+        // Filter Katalog
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const catalogCards = document.querySelectorAll(".catalog-card");
+        const searchInput = document.getElementById("catalog-search");
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.getAttribute("data-filter");
+            catalogCards.forEach((card) => {
+              if (
+                filter === "all" ||
+                card.getAttribute("data-category") === filter
+              ) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+
+        // Live Search Katalog
+        if (searchInput) {
+          searchInput.addEventListener("input", (e) => {
+            const value = e.target.value.toLowerCase();
+            catalogCards.forEach((card) => {
+              const title = card.querySelector("h3").innerText.toLowerCase();
+              const desc = card.querySelector("p").innerText.toLowerCase();
+              if (title.includes(value) || desc.includes(value)) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

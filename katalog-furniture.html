@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Katalog Furnitur & Interior Kantor | PT. SriRezeki IndoTama</title>
+    <meta
+      name="description"
+      content="Katalog pengadaan furnitur dan perlengkapan interior kantor berkualitas tinggi untuk menunjang produktivitas dari PT. SriRezeki IndoTama."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- File CSS Global & Khusus Katalog -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="furniture.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar-container">
+      <nav class="navbar">
+        <a
+          href="indotama.html"
+          class="brand-logo"
+          aria-label="PT. SriRezeki IndoTama Homepage"
+        >
+          PT. SriRezeki <span>IndoTama</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Buka Menu Navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="indotama.html#home">Beranda</a></li>
+          <li><a href="indotama.html#about">Tentang Kami</a></li>
+          <li><a href="indotama.html#services">Layanan</a></li>
+
+          <!-- Submenu Katalog -->
+          <li class="dropdown">
+            <a href="javascript:void(0)">
+              Katalog <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="katalog-konstruksi.html">
+                  <i class="fa-solid fa-bolt"></i> Alat Elektronik
+                </a>
+              </li>
+              <li>
+                <a href="katalog-kebakaran.html">
+                  <i class="fa-solid fa-fire-extinguisher"></i> Kelistrikan &
+                  Fire Safety
+                </a>
+              </li>
+              <li>
+                <a href="katalog-furniture.html">
+                  <i class="fa-solid fa-couch"></i> Furnitur & Interior
+                </a>
+              </li>
+              <li>
+                <a href="katalog-atk.html" class="active">
+                  <i class="fa-solid fa-pen-clip"></i> Alat Tulis Kantor (ATK)
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Contact Us Dropdown -->
+          <li class="dropdown">
+            <a href="#contact" class="btn btn-primary">
+              Contact Us <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-contact">
+              <li>
+                <a
+                  href="https://wa.me/628158999400"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-whatsapp whatsapp-icon"></i> WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/srirezeki.indotama?stkn=MWE2MHVlbHk4azU="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-instagram instagram-icon"></i>
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Catalog Banner Header -->
+      <section class="catalog-hero">
+        <div class="catalog-hero-content">
+          <span class="badge"
+            ><i class="fa-solid fa-chair"></i> Kenyamanan & Estetika Ruang</span
+          >
+          <h1>Furnitur & Interior Perkantoran</h1>
+          <p>
+            Solusi pengadaan perlengkapan furnitur kantor modern, ergonomis, dan
+            tahan lama untuk menciptakan suasana kerja yang profesional dan
+            produktif.
+          </p>
+        </div>
+      </section>
+
+      <!-- Catalog Content Section -->
+      <section class="catalog-section">
+        <div class="catalog-container">
+          <!-- Filter & Search Bar -->
+          <div class="catalog-toolbar">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="catalog-search"
+                placeholder="Cari meja, kursi, atau partisi kantor..."
+              />
+            </div>
+            <div class="filter-categories">
+              <button class="filter-btn active" data-filter="all">Semua</button>
+              <button class="filter-btn" data-filter="kursi">
+                Kursi Kerja
+              </button>
+              <button class="filter-btn" data-filter="meja">Meja Kantor</button>
+              <button class="filter-btn" data-filter="penyimpanan">
+                Penyimpanan & Sekat
+              </button>
+            </div>
+          </div>
+
+          <!-- Catalog Grid -->
+          <div class="catalog-grid">
+            <!-- Item 1: Kursi Ergonomis -->
+            <article class="catalog-card" data-category="kursi">
+              <div class="catalog-img">
+                <img
+                  src="kursiergo.png"
+                  alt="Kursi Kantor Ergonomis"
+                  loading="lazy"
+                />
+                <span class="category-tag">Kursi Kerja</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Kursi Kantor Ergonomis Eksekutif</h3>
+                <p>
+                  Kursi kerja dengan sandaran jaring (mesh) berstandar ergonomis
+                  tinggi untuk mendukung kenyamanan posisi duduk seharian di
+                  kantor.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Sandaran Kepala & Lumbar
+                    Adjustable
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Rangka Kokoh & Hidrolik
+                    Premium
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20pengadaan%20Kursi%20Ergonomis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2: Meja Kerja Staff / Meeting -->
+            <article class="catalog-card" data-category="meja">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80"
+                  alt="Meja Kerja Kantor Modern"
+                  loading="lazy"
+                />
+                <span class="category-tag">Meja Kantor</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Meja Kerja & Meja Meeting Modern</h3>
+                <p>
+                  Set meja kantor modular dengan desain minimalis modern,
+                  dilengkapi manajemen kabel rapi dan lapisan anti gores.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Pilihan Partisi Kubikal
+                    Terintegrasi
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Finishing Kayu & Metal
+                    Berkualitas
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20Meja%20Kantor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 3: Lemari Arsip / Filing Cabinet -->
+            <article class="catalog-card" data-category="penyimpanan">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=600&q=80"
+                  alt="Lemari Arsip Filing Cabinet"
+                  loading="lazy"
+                />
+                <span class="category-tag">Penyimpanan & Sekat</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Lemari Arsip & Filing Cabinet Besi</h3>
+                <p>
+                  Kabinet penyimpanan dokumen perkantoran berbahan plat baja
+                  tebal anti karat dengan sistem penguncian keamanan ganda.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Kapasitas Besar & Rak
+                    Adjustable
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Sistem Kunci Sentral
+                    Otomatis
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20Filing%20Cabinet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 4: Sofa & Partisi Ruangan -->
+            <article class="catalog-card" data-category="penyimpanan">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80"
+                  alt="Sofa Ruang Tunggu Kantor"
+                  loading="lazy"
+                />
+                <span class="category-tag">Penyimpanan & Sekat</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Sofa Ruang Tunggu & Partisi Ruangan</h3>
+                <p>
+                  Pilihan sofa lobi kantor yang elegan serta partisi pembatas
+                  ruangan akustik untuk menjaga privasi area kerja terbuka.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Bahan Kulit Sintetis /
+                    Kain Premium
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Desain Custom Sesuai
+                    Interior Ruangan
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20Sofa%20dan%20Partisi%20Kantor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="brand-logo">PT. SriRezeki <span>IndoTama</span></div>
+          <p>
+            Mitra terpercaya untuk pengadaan furnitur dan penataan interior
+            profesional perkantoran.
+          </p>
+        </div>
+        <div class="footer-links">
+          <p><strong>Daftar Halaman</strong></p>
+          <a href="indotama.html">Beranda</a>
+          <a href="indotama.html">Tentang Kami</a>
+          <a href="indotama.html">Layanan</a>
+        </div>
+        <div class="footer-socials">
+          <p><strong>Contact Us</strong></p>
+          <a
+            href="https://wa.me/628158999400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a
+            href="https://www.instagram.com/srirezeki.indotama?stkn=MWE2MHVlbHk4azU="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PT. SriRezeki IndoTama. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Script Menu Navigation & Filter Search Katalog -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Menu Toggle Mobile
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            const icon = menuToggle.querySelector("i");
+            if (icon) {
+              if (navLinks.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+              } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+              }
+            }
+          });
+        }
+
+        // Filter Katalog
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const catalogCards = document.querySelectorAll(".catalog-card");
+        const searchInput = document.getElementById("catalog-search");
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.getAttribute("data-filter");
+            catalogCards.forEach((card) => {
+              if (
+                filter === "all" ||
+                card.getAttribute("data-category") === filter
+              ) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+
+        // Live Search Katalog
+        if (searchInput) {
+          searchInput.addEventListener("input", (e) => {
+            const value = e.target.value.toLowerCase();
+            catalogCards.forEach((card) => {
+              const title = card.querySelector("h3").innerText.toLowerCase();
+              const desc = card.querySelector("p").innerText.toLowerCase();
+              if (title.includes(value) || desc.includes(value)) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

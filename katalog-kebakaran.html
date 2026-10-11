@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Katalog Alat Kelistrikan & Keamanan Kebakaran | PT. SriRezeki IndoTama
+    </title>
+    <meta
+      name="description"
+      content="Katalog pengadaan alat kelistrikan dan sistem proteksi kebakaran (fire safety) berstandar K3 untuk gedung dan perkantoran dari PT. SriRezeki IndoTama."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- File CSS Global & Khusus Katalog -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kebakaran.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar-container">
+      <nav class="navbar">
+        <a
+          href="indotama.html"
+          class="brand-logo"
+          aria-label="PT. SriRezeki IndoTama Homepage"
+        >
+          PT. SriRezeki <span>IndoTama</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Buka Menu Navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="indotama.html#home">Beranda</a></li>
+          <li><a href="indotama.html#about">Tentang Kami</a></li>
+          <li><a href="indotama.html#services">Layanan</a></li>
+
+          <!-- Submenu Katalog -->
+          <li class="dropdown">
+            <a href="javascript:void(0)">
+              Katalog <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="katalog-konstruksi.html">
+                  <i class="fa-solid fa-bolt"></i> Alat Elektronik
+                </a>
+              </li>
+              <li>
+                <a href="katalog-kebakaran.html">
+                  <i class="fa-solid fa-fire-extinguisher"></i> Kelistrikan &
+                  Fire Safety
+                </a>
+              </li>
+              <li>
+                <a href="katalog-furniture.html">
+                  <i class="fa-solid fa-couch"></i> Furnitur & Interior
+                </a>
+              </li>
+              <li>
+                <a href="katalog-atk.html" class="active">
+                  <i class="fa-solid fa-pen-clip"></i> Alat Tulis Kantor (ATK)
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Contact Us Dropdown -->
+          <li class="dropdown">
+            <a href="#contact" class="btn btn-primary">
+              Contact Us <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-contact">
+              <li>
+                <a
+                  href="https://wa.me/628158999400"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-whatsapp whatsapp-icon"></i> WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/srirezeki.indotama?stkn=MWE2MHVlbHk4azU="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-instagram instagram-icon"></i>
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Catalog Banner Header -->
+      <section class="catalog-hero">
+        <div class="catalog-hero-content">
+          <span class="badge"
+            ><i class="fa-solid fa-shield-halved"></i> Standar Keamanan K3</span
+          >
+          <h1>Alat Kelistrikan & Proteksi Kebakaran</h1>
+          <p>
+            Solusi pengadaan sistem kelistrikan gedung serta perangkat
+            keselamatan & perlindungan kebakaran (Fire Safety) terstandarisasi
+            untuk keamanan fasilitas perkantoran.
+          </p>
+        </div>
+      </section>
+
+      <!-- Catalog Content Section -->
+      <section class="catalog-section">
+        <div class="catalog-container">
+          <!-- Filter & Search Bar -->
+          <div class="catalog-toolbar">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="catalog-search"
+                placeholder="Cari alat kelistrikan atau kebakaran..."
+              />
+            </div>
+            <div class="filter-categories">
+              <button class="filter-btn active" data-filter="all">Semua</button>
+              <button class="filter-btn" data-filter="kebakaran">
+                Alat Kebakaran
+              </button>
+              <button class="filter-btn" data-filter="kelistrikan">
+                Kelistrikan Gedung
+              </button>
+              <button class="filter-btn" data-filter="keamanan">
+                Sistem Peringatan
+              </button>
+            </div>
+          </div>
+
+          <!-- Catalog Grid -->
+          <div class="catalog-grid">
+            <!-- Item 1: APAR (Alat Pemadam Ringan) -->
+            <article class="catalog-card" data-category="kebakaran">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&w=600&q=80"
+                  alt="Tabung Pemadam APAR"
+                  loading="lazy"
+                />
+                <span class="category-tag">Alat Kebakaran</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Tabung Pemadam Api (APAR) Portable</h3>
+                <p>
+                  Tabung pemadam api berbagai jenis (Dry Powder, CO2, Foam)
+                  bersertifikat SNI untuk penanganan dini titik api di area
+                  kantor.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Kapasitas 3Kg - 9Kg Siap
+                    Pakai
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Bersertifikasi & Lolos Uji
+                    Dinas Terkait
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20pengadaan%20APAR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2: Fire Hydrant & Box -->
+            <article class="catalog-card" data-category="kebakaran">
+              <div class="catalog-img">
+                <img src="hydran.png" alt="Fire Hydrant Box" loading="lazy" />
+                <span class="category-tag">Alat Kebakaran</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Indoor/Outdoor Fire Hydrant Box & Selang</h3>
+                <p>
+                  Perangkat box hydrant lengkap dengan selang pemadam (hose),
+                  nozzle, dan katup untuk suplai air bertekanan tinggi di
+                  gedung.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Material Plat Baja Anti
+                    Karat
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Standar Keamanan Gedung
+                    Bertingkat
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20Fire%20Hydrant%20Box"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 3: Alarm & Smoke Detector -->
+            <article class="catalog-card" data-category="keamanan">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80"
+                  alt="Smoke Detector dan Alarm Kebakaran"
+                  loading="lazy"
+                />
+                <span class="category-tag">Sistem Peringatan</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Smoke & Heat Detector (Alarm Kebakaran)</h3>
+                <p>
+                  Sensor pendeteksi asap dan panas otomatis terpusat (Fire Alarm
+                  System) untuk peringatan dini evakuasi karyawan.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Sensor Sensitivitas Tinggi
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Terintegrasi Panel Kontrol
+                    Utama
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20Smoke%20Detector%20dan%20Alarm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 4: Panel Kelistrikan Utama (MCB / Stabilizer) -->
+            <article class="catalog-card" data-category="kelistrikan">
+              <div class="catalog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80"
+                  alt="Panel Kelistrikan Kantor"
+                  loading="lazy"
+                />
+                <span class="category-tag">Kelistrikan Gedung</span>
+              </div>
+              <div class="catalog-body">
+                <h3>Panel Kontrol Listrik & UPS Kantor</h3>
+                <p>
+                  Penyediaan box panel listrik, pemutus arus (MCB/MCCB),
+                  penstabil tegangan (Stabilizer), dan UPS cadangan daya server.
+                </p>
+                <ul class="spec-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Mencegah Korsleting &
+                    Lonjakan Arus
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Standar Instalasi Listrik
+                    Aman (ILAM)
+                  </li>
+                </ul>
+                <div class="catalog-footer">
+                  <a
+                    href="https://wa.me/628158999400?text=Halo%20PT.%20SriRezeki%20IndoTama,%20saya%20ingin%20konsultasi%20Panel%20Kelistrikan%20dan%20UPS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Konsultasi
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="brand-logo">PT. SriRezeki <span>IndoTama</span></div>
+          <p>
+            Mitra terpercaya untuk pengadaan sistem kelistrikan dan perangkat
+            standar keselamatan kebakaran gedung perkantoran.
+          </p>
+        </div>
+        <div class="footer-links">
+          <p><strong>Daftar Halaman</strong></p>
+          <a href="indotama.html">Beranda</a>
+          <a href="indotama.html">Tentang Kami</a>
+          <a href="indotama.html">Layanan</a>
+        </div>
+        <div class="footer-socials">
+          <p><strong>Contact Us</strong></p>
+          <a
+            href="https://wa.me/628158999400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a
+            href="https://www.instagram.com/srirezeki.indotama?stkn=MWE2MHVlbHk4azU="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PT. SriRezeki IndoTama. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Script Menu Navigation & Filter Search Katalog -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Menu Toggle Mobile
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            const icon = menuToggle.querySelector("i");
+            if (icon) {
+              if (navLinks.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+              } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+              }
+            }
+          });
+        }
+
+        // Filter Katalog
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const catalogCards = document.querySelectorAll(".catalog-card");
+        const searchInput = document.getElementById("catalog-search");
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.getAttribute("data-filter");
+            catalogCards.forEach((card) => {
+              if (
+                filter === "all" ||
+                card.getAttribute("data-category") === filter
+              ) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+
+        // Live Search Katalog
+        if (searchInput) {
+          searchInput.addEventListener("input", (e) => {
+            const value = e.target.value.toLowerCase();
+            catalogCards.forEach((card) => {
+              const title = card.querySelector("h3").innerText.toLowerCase();
+              const desc = card.querySelector("p").innerText.toLowerCase();
+              if (title.includes(value) || desc.includes(value)) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
